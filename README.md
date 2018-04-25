@@ -4,7 +4,9 @@ Formik x React Popper
 
 ## Why?
 
-Forms that live in popovers like Airbnb's search filters.
+Quickly build forms that live in popovers like Airbnb's search filters.
+
+![kapture 2018-04-25 at 19 51 50](https://user-images.githubusercontent.com/4060187/39278604-23811ea2-48c2-11e8-9fbe-b8f2b5f7a888.gif)
 
 ## How
 
