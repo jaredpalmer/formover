@@ -1,0 +1,44 @@
+{
+  "name": "parcel-react-example",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "build":
+      "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /"
+  },
+  "resolutions": {
+    "**/@types/react": "16.3.12",
+    "**/@types/react-dom": "16.0.5"
+  },
+  "dependencies": {
+    "@types/node": "^8.5.1",
+    "@types/react": "^16.3.12",
+    "@types/react-dom": "^16.0.5",
+    "@types/webpack-env": "^1.13.3",
+    "autoprefixer": "^7.2.1",
+    "formik": "^0.11.11",
+    "parcel-bundler": "^1.2.0",
+    "parcel-plugin-typescript": "^0.2.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.2.0",
+    "react-popper": "^0.10.1",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.8.2"
+  },
+  "alias": {
+    "formover": "../dist"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1"
+  }
+}

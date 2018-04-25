@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "pretty": true,
+    "jsx": "react",
+    "suppressImplicitAnyIndexErrors": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["es6", "es2015", "es2017", "dom"]
+  },
+  "exclude": ["example", "dist", "node_modules"]
+}
