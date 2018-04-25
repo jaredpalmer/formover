@@ -59,7 +59,7 @@ const App = () => (
 );
 ```
 
-
+![bitmoji](https://render.bitstrips.com/v2/cpanel/6effbe04-03f0-4c2d-a1cd-43777cbebfb6-d1a1e672-c5f5-466f-bff9-82e07b058b8f-v1.png?transparent=1&palette=1&width=246)
 ---
 
 MIT License
