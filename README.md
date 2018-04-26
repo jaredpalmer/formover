@@ -4,7 +4,9 @@ Formik x React Popper
 
 ## Why?
 
-Forms that live in popovers like Airbnb's search filters.
+Quickly build forms that live in popovers like Airbnb's search filters.
+
+![kapture 2018-04-25 at 19 51 50](https://user-images.githubusercontent.com/4060187/39278604-23811ea2-48c2-11e8-9fbe-b8f2b5f7a888.gif)
 
 ## How
 
@@ -58,6 +60,7 @@ const App = () => (
 );
 ```
 
+![bitmoji](https://render.bitstrips.com/v2/cpanel/6effbe04-03f0-4c2d-a1cd-43777cbebfb6-d1a1e672-c5f5-466f-bff9-82e07b058b8f-v1.png?transparent=1&palette=1&width=246)
 ---
 
 MIT License
