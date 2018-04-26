@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -p",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "start": "tsc -w"
   },
   "peerDependencies": {
