@@ -3,12 +3,11 @@
   "version": "1.0.2",
   "main": "dist/formover.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "MIT",
   "scripts": {
     "build": "tsc -p",
+    "prepublish": "npm run build",
     "start": "tsc -w"
   },
   "peerDependencies": {
