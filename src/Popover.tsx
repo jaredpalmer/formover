@@ -41,43 +41,41 @@ export class Popover extends React.Component<PopoverConfig> {
 
     return (
       <Toggle on={isOpen} onToggle={onToggle}>
-        {({ on, getTogglerProps, setOff: close, setOn: open, toggle }) =>
-          console.log(on) || (
-            <Manager>
-              <Target>
-                {({ targetProps }) =>
-                  target({
-                    getTargetProps: (props?: any) =>
-                      getTogglerProps({ ...props, innerRef: targetProps.ref }),
-                    isOpen: on,
-                    toggle,
-                    close,
-                    open,
-                  })
-                }
-              </Target>
-              {on && (
-                <Pop placement={placement}>
-                  <ClickOutHandler onClickOut={close}>
-                    <KeyHandler
-                      keyEventName="keydown"
-                      keyValue="Escape"
-                      onKeyHandle={close}
-                    />
-                    {typeof children === 'function'
-                      ? children({
-                          isOpen: on,
-                          toggle,
-                          close,
-                          open,
-                        })
-                      : children}
-                  </ClickOutHandler>
-                </Pop>
-              )}
-            </Manager>
-          )
-        }
+        {({ on, getTogglerProps, setOff: close, setOn: open, toggle }) => (
+          <Manager>
+            <Target>
+              {({ targetProps }) =>
+                target({
+                  getTargetProps: (props?: any) =>
+                    getTogglerProps({ ...props, innerRef: targetProps.ref }),
+                  isOpen: on,
+                  toggle,
+                  close,
+                  open,
+                })
+              }
+            </Target>
+            {on && (
+              <Pop placement={placement}>
+                <ClickOutHandler onClickOut={close}>
+                  <KeyHandler
+                    keyEventName="keydown"
+                    keyValue="Escape"
+                    onKeyHandle={close}
+                  />
+                  {typeof children === 'function'
+                    ? children({
+                        isOpen: on,
+                        toggle,
+                        close,
+                        open,
+                      })
+                    : children}
+                </ClickOutHandler>
+              </Pop>
+            )}
+          </Manager>
+        )}
       </Toggle>
     );
   }
