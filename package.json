@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "main": "dist/formover.js",
   "types": "dist/index.d.ts",
+  "author": "Jared Palmer <jared@palmer.net>",
   "files": ["dist"],
   "license": "MIT",
   "scripts": {
