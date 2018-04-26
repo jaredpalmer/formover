@@ -25,6 +25,7 @@ const Button: React.SFC<any> = ({ innerRef, ...props }) => (
 export interface FormValues {
   email: string;
 }
+
 const App = () => (
   <div className="App">
     <h1 className="App-Title">Formik + React-Popper = Formover</h1>

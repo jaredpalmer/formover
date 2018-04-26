@@ -1,3 +1,4 @@
+declare module 'react-onclickout';
 declare module 'react-key-handler' {
   import * as React from 'react';
 

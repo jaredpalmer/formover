@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Toggle, TogglerComponentProps } from './Toggle';
 import { Target, Manager, Popper as Pop, IPopperProps } from 'react-popper';
-// const ClickOutHandler = require('react-onclickout');
-// const KeyHandler = require('react-key-handler');
+
+const ClickOutHandler = require('react-onclickout');
+const KeyHandler = require('react-key-handler').default;
 
 /** Popover Render Props */
 export interface PopoverProps {
@@ -57,14 +58,21 @@ export class Popover extends React.Component<PopoverConfig> {
               </Target>
               {on && (
                 <Pop placement={placement}>
-                  {typeof children === 'function'
-                    ? children({
-                        isOpen: on,
-                        toggle,
-                        close,
-                        open,
-                      })
-                    : children}
+                  <ClickOutHandler onClickOut={close}>
+                    <KeyHandler
+                      keyEventName="keydown"
+                      keyValue="Escape"
+                      onKeyHandle={close}
+                    />
+                    {typeof children === 'function'
+                      ? children({
+                          isOpen: on,
+                          toggle,
+                          close,
+                          open,
+                        })
+                      : children}
+                  </ClickOutHandler>
                 </Pop>
               )}
             </Manager>

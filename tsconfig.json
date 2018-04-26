@@ -25,5 +25,6 @@
     "moduleResolution": "node",
     "lib": ["es6", "es2015", "es2017", "dom"]
   },
-  "exclude": ["example", "dist", "node_modules"]
+  "exclude": ["example", "dist", "node_modules"],
+  "include": ["src"]
 }

@@ -2,10 +2,7 @@
   "name": "formover",
   "version": "1.0.0",
   "main": "dist/formover.js",
-  "umd:main": "dist/formover.umd.js",
-  "module": "dist/formover.m.js",
-  "types": "dist/formover.d.ts",
-  "source": "./src/formover.tsx",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -20,7 +17,6 @@
     "react-popper": ">=0.10.1"
   },
   "dependencies": {
-    "react-clickout": "^2.3.0",
     "react-key-handler": "^1.0.1",
     "react-onclickout": "^2.0.8"
   },

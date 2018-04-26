@@ -41,22 +41,20 @@ export class Formover<Values = {}> extends React.Component<
         placement={placement}
       >
         {popProps => (
-          <div>
-            <Formik
-              initialValues={initialValues}
-              validateOnChange={validateOnChange}
-              validate={validate}
-              validateOnBlur={validateOnBlur}
-              validationSchema={validationSchema}
-              isInitialValid={isInitialValid}
-              onSubmit={(values: Values, actions: FormikActions<Values>) =>
-                onSubmit(values, actions, popProps)
-              }
-              render={(props: FormikProps<Values>) => (
-                <>{children({ ...props, ...popProps })}</>
-              )}
-            />
-          </div>
+          <Formik
+            initialValues={initialValues}
+            validateOnChange={validateOnChange}
+            validate={validate}
+            validateOnBlur={validateOnBlur}
+            validationSchema={validationSchema}
+            isInitialValid={isInitialValid}
+            onSubmit={(values: Values, actions: FormikActions<Values>) =>
+              onSubmit(values, actions, popProps)
+            }
+            render={(props: FormikProps<Values>) => (
+              <>{children({ ...props, ...popProps })}</>
+            )}
+          />
         )}
       </Popover>
     );
