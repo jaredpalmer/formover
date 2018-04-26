@@ -7,7 +7,7 @@
   "files": ["dist"],
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p",
+    "build": "tsc -p tsconfig.json",
     "prepare": "npm run build",
     "start": "tsc -w"
   },
