@@ -12,6 +12,7 @@ const Button: React.SFC<any> = ({ innerRef, ...props }) => (
 export interface FormValues {
   email: string;
 }
+
 const App = () => (
   <div className="App">
     <img className="App-logo" src={logo} alt="React" />
