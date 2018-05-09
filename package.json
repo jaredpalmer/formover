@@ -1,6 +1,6 @@
 {
   "name": "formover",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Jared Palmer <jared@palmer.net>",
