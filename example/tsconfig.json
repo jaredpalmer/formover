@@ -13,20 +13,9 @@
     "strictNullChecks": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "lib": [
-      "es2015",
-      "es2016",
-      "dom"
-    ],
+    "lib": ["es2015", "es2016", "dom"],
     "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "types": [
-      "node",
-      "webpack-env"
-    ]
+
+    "types": ["node", "webpack-env"]
   }
 }

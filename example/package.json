@@ -24,11 +24,10 @@
     "react-popper": "^0.10.1",
     "tslint": "^5.8.0",
     "tslint-react": "^3.2.0",
-    "typescript": "^2.8.2"
+    "typescript": "^2.8.2",
+    "formover": "*"
   },
-  "alias": {
-    "formover": "../dist"
-  },
+
   "postcss": {
     "modules": false,
     "plugins": {
